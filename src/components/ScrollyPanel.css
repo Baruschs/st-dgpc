@@ -1,0 +1,71 @@
+/* Estilos para el CONTENEDOR de cada capítulo */
+.scrolly-panel {
+  min-height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+  
+  /* Por defecto, los paneles se alinean verticalmente en el centro */
+  align-items: center; 
+}
+
+/* Estilos para el CUADRO DE TEXTO por defecto (para el cap 2, 3, etc.) */
+.scrolly-panel .scrolly-panel-content {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 450px;
+  margin-left: 3rem; /* Margen para posicionarlo a la izquierda */
+  border-left: 4px solid #611232;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: left; /* Alineación de texto por defecto */
+}
+
+
+/* --- ESTILOS ESPECIALES PARA EL PRIMER PANEL (OPCIÓN A) --- */
+
+/* Estilos para el CONTENEDOR del primer panel */
+.scrolly-panel.is-title-card {
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-start; /* Alinea el contenido en la parte superior */
+  padding-top: 1vh; /* Un margen para que no quede pegado al borde de arriba */
+}
+
+/* Estilos para el CONTENIDO DE TEXTO DENTRO del primer panel */
+.scrolly-panel.is-title-card .scrolly-panel-content {
+  /* Anulamos los estilos del cuadro por defecto */
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  margin-left: 0; /* Quitamos el margen izquierdo */
+  text-align: center; /* Centramos el texto */
+  
+  /* Aplicamos la animación de zoom */
+  animation: zoom-in 0.8s ease-out;
+}
+
+/* Estilos para la FUENTE del primer panel */
+.scrolly-panel.is-title-card h2 {
+  font-size: 2.8em;
+  color: white;
+}
+
+.scrolly-panel.is-title-card p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+
+/* Definición de la animación de zoom */
+@keyframes zoom-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

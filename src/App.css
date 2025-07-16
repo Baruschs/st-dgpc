@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+.app-container {
+  /* La posición relativa es necesaria para que los elementos internos 
+     con posición absoluta se ubiquen correctamente. */
+  position: relative; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scrolly-column {
+  /* Esta columna es ahora un contenedor para los triggers de scroll, 
+     posicionado sobre el mapa. */
+  position: absolute;
+  z-index: 50; /* Asegura que los paneles de texto estén por encima del mapa */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.map-column {
+  /* Hacemos que el mapa sea un fondo fijo que ocupa toda la pantalla. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; /* Lo ponemos en una capa inferior */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
