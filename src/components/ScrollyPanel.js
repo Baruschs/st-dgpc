@@ -38,7 +38,7 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
     if (chapter.id === "titulo") {
       return (
         <div className="logo-container">
-            <img src="/data/images/goberw.png"
+            <img src={"${process.env.PUBLIC_URL}/data/images/goberw.png"}
               alt="Secretaría de Gobernación"
               className="gobernacion-logo"
             />
