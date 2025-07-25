@@ -1,111 +1,296 @@
+// src/config/chapters.js
+
+// import { type } from "os";
+
 export const chapters = {
-  historia_celaya: {
-    id: 'historia_celaya',
-    title: 'MESAS DE PAZ',
-    description:
-      'CELAYA, GTO 204-205 - DGPC-GOBERNACIÓN.',
-    location: {
-      center: [-102.10570, 25.25189],
-      zoom: 4.7,
-      pitch: 0,
-      bearing: 0
-    }
-  },
-  municipio: {
-    id: 'municipio',
-    title: 'OBJETIVO:',
-    description:
-      `Las Mesas de Paz son espacios de colaboración entre todos los niveles de Gobierno y la ciudadanía para construir estrategias de paz y bienestar.
-       Entre sus objetivos están: \nPromover la cultura de paz entre la ciudadanía y los servidores públicos, \ngenerar estrategias de colaboración entre los tres órdenes de gobierno, y \nlas comunidades y garantizar condiciones de bienestar y prosperidad de la población y sus comunidades.`,
-    location: {
-      center: [-102.10570, 25.25189],
-      zoom: 4.7,
-      pitch: 0,
-      bearing: 0
-    }
-  },
-  centro_historico: {
-    id: 'centro_historico',
-    title: 'ACTIVIDADES REALIZADAS',
-    description:
-      'Durante el periodo noviembre 2024 y febrero 2025 se llevaron a cabo 10 brigadas en Celaya, Gto; de las cuáles la DGPC participó en 7.',
-    location: {
-      center: [-100.81094, 20.52193],
-      zoom: 11.5,
-      pitch: 0,
-      bearing: 0
-    }
-  },
-  alameda: {
-    id: 'alameda',
-    title: 'ACTIVIDADES REALIZADAS',
-    description:
-      'Hasta febrero de 2025 los brigadistas de la DGCCPS han cubierto 9 colonias del municipio de Celaya, Gto.',
-    location: {
-      center: [-100.81094, 20.52193],
-      zoom: 11.5,
-      pitch: 0,
-      bearing: 0
-    }
-  },
-  zona_poniente: {
-    id: 'zona_poniente',
-    title: 'VILLAS DEL BAJÍO',
-    description:
-      'La zona poniente de Celaya simboliza la expansión y modernidad de la ciudad. Aquí se han desarrollado importantes fraccionamientos residenciales, centros comerciales y campus universitarios que reflejan el crecimiento de la ciudad.',
-    location: {
-      center: [-100.87032, 20.55503],
-      zoom: 14,
-      pitch: 65,
-      bearing: 0
-    }
-  },
+titulo: {
+id: "titulo",
+title: "",
+description: "",
+location: {
+center: [-102.1057, 25.25189],
+zoom: 4.7,
+pitch: 0,
+bearing: 0,
+},
+},
 
- zona_poniente1: {
-    id: 'zona_poniente1',
-    title: 'RANCHO SECO',
-    description:
-      'La zona poniente de Celaya simboliza la expansión y modernidad de la ciudad. Aquí se han desarrollado importantes fraccionamientos residenciales, centros comerciales y campus universitarios que reflejan el crecimiento de la ciudad.',
-    location: {
-      center: [-100.80813, 20.49510],
-      zoom: 15,
-      pitch: 65,
-      bearing: 0
-    }
-  },
+imagen1: {
+id: "imagen1",
+type: "image",
+title: "¿QUÉ ES LA DGPC?",
+description: `La Dirección General de Participación y Consultas (DGPC) es una unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo al marco normativo y mejores estándares aplicables.`,
+stats: [
+{ label:
+"Su misión implica tanto el cumplimiento de normas nacionales e internacionales como el fortalecimiento de la democracia participativa en México. "
+},
+],
+imageUrl: "/data/images/ind\_mex.jpg",
+},
 
- zona_poniente2: {
-    id: 'zona_poniente2',
-    title: 'RINCÓN DE TAMAYO',
-    description:
-      'La zona poniente de Celaya simboliza la expansión y modernidad de la ciudad. Aquí se han desarrollado importantes fraccionamientos residenciales, centros comerciales y campus universitarios que reflejan el crecimiento de la ciudad.',
-    location: {
-      center: [-100.75966, 20.41852],
-      zoom: 15,
-      pitch: 65,
-      bearing: 0
-    }
-  },
+imagen2: {
+id: "imagen2",
+type: "image",
+title: "FUNCIONES SUSTANTIVAS",
+description: `Órgano estratégico de la AdmnistraciónPública Federal mexicana, cuya función principal es diseñar, coordinar, supervisar y evaluar políticas públicas y procesos relacionados con l aparticipación social y la consulta indígena.`,
+stats: [
+{ label: "Diseño y normatividad. " },
+{ label: "Coordinación interinstitucional y representación. " },
+{ label: "Supervisión y asesorría. " },
+{ label: "Sistematización y mejora continua. " },
+],
+imageUrl: "/data/images/trab\_equipo.jpg",
+},
 
- zona_poniente3: {
-    id: 'zona_poniente3',
-    title: 'EMILIANO ZAPATA',
-    description:
-      'La zona poniente de Celaya simboliza la expansión y modernidad de la ciudad. Aquí se han desarrollado importantes fraccionamientos residenciales, centros comerciales y campus universitarios que reflejan el crecimiento de la ciudad.',
-    location: {
-      center: [-100.79400, 20.54187],
-      zoom: 15,
-      pitch: 65,
-      bearing: 0
-    }
-  }
+imagen3: {
+id: "imagen3",
+type: "image",
+title: "CONSULTA INDÍGENA",
+description: `La Consulta Indígena a los pueblos indígenas y afromexicanos es un mecanismo esencial para la construcción de paz durarera y con justicia en el país`,
+imageUrl: "/data/images/Collage\_1\_con-ind.jpg",
+},
 
+conind1: {
+id: "conind1",
+type: "map",
+title: "CONSULTA INDÍGENA",
+description:
+"A los pueblos Yaquis sobre la Manifestación de Impacto Ambiental (MIA) y operación del Acueducto Independencia.",
+location: {
+center: [-110.03709, 27.35844],
+zoom: 9,
+pitch: 65,
+bearing: 0,
+},
+pmtileUrl: "pmtiles:///data/terr\_yaqui.pmtiles",
+sourceLayer: "terr\_yaqui\_tile",
+layerType: "polygon",
+},
 
+conind2: {
+id: "conind2",
+type: "map",
+title: "CONSULTA INDÍGENA",
+description: "Del Proyecto Vista Pacífico",
+location: {
+center: [-109.054, 25.59],
+zoom: 14,
+pitch: 65,
+bearing: 0,
+},
+pmtileUrl: "pmtiles:///data/Topolobampo.pmtiles",
+sourceLayer: "Topolobampo\_tile",
+layerType: "polygon",
+},
 
+conind3: {
+id: "conind3",
+type: "map",
+title: "CONSULTA INDÍGENA",
+description: "Para el Proyecto Helax",
+location: {
+center: [-95.2, 16.1],
+zoom: 10,
+pitch: 65,
+bearing: 0,
+},
+pmtileUrl: "pmtiles:///data/mun\_Helax.pmtiles",
+sourceLayer: "mun\_Helax\_tile",
+layerType: "polygon",
+},
 
+leygraldpia: {
+id: "leygraldpia",
+type: "map",
+title: "LEY GENERAL SOBRE LOS DERECHOS DE LOS PUEBLOS INDÍGENAS Y AFROMEXICANOS",
+stats: [
+{ label: "Se trabaja en corrdinación con el Comité Técnico." },
+{ label: "Se realizan sesiones de trabajo con los representantes de los pueblos indígenas." },
+{ label: "Se realizan las consultas en los pueblos indígenas para la aprobacion de la Ley." },
+],
+location: {
+center: [-102.1057, 25.25189],
+zoom: 4.7,
+pitch: 0,
+bearing: 0,
+},
+pmtileUrl: "pmtiles:///data/comunidades\_inpi.pmtiles",
+sourceLayer: "comunidades\_inpi\_tile",
+layerType: "point",
+},
 
+trenmexqro: {
+id: "trenmexqro",
+type: "map",
+title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
+stats: [
+{ label: "Tren Ciudad de México hacia el estado de Querétaro" },
+],
+location: {
+center: [-99.80342, 20.10214],
+zoom: 8.4,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'ent-Mex-Qro',
+pmtileUrl: "pmtiles:///data/ent\_Tren\_Mex-Qro.pmtiles",
+sourceLayer: "ent\_Tren\_MexQro\_tile",
+layerType: "polygon",
+},
+{
+id: 'trazomeqro',
+pmtileUrl: "pmtiles:///data/trazo\_Mex-Qro.pmtiles",
+sourceLayer: "trazo\_MexQro\_tile",
+layerType: "line",
+// 👇 Coordenadas añadidas para este tramo
+startCoords: [-99.151472, 19.451804],
+endCoords: [-100.4164969, 20.6007303]
+}
+]
+},
 
+trenaifapach: {
+id: "trenaifapach",
+type: "map",
+title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
+stats: [
+{ label: "Tren Aeropuerto Internacional Felipe Ángeles (AIFA) a Pachuca, Hgo." },
+],
+location: {
+center: [-98.89374, 19.89560],
+zoom: 9.6,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'ent-AIFA-Pach',
+pmtileUrl: "pmtiles:///data/ent\_AIFA-Pachuca.pmtiles",
+sourceLayer: "ent\_AIFAPachuca\_tile",
+layerType: "polygon",
+},
+{
+id: 'trazoaifapach', // Cambiado ID para que sea único
+pmtileUrl: "pmtiles:///data/trazo\_AIFA-Pachuca.pmtiles",
+sourceLayer: "trazo\_AIFAPachuca\_tile",
+layerType: "line",
+// 👇 Coordenadas añadidas para este tramo (con la corrección de typo)
+startCoords: [-99.077292, 19.70631],
+endCoords: [-98.747895, 20.06939]
+}
+]
+},
 
+estconstpaz: {
+id: "estconstpaz",
+title: "ESTRATEGIA DE CONSTRUCCION DE PAZ",
+stats: [
+{ label: "BRIGADAS POR LA PAZ (Chihuahua y Guanajuato)." },
+{ label: "SÍ, AL DESARME (Ciudad de México)." },
+{ label: "TIANGUIS DEL BIENESTAR (Guerrero)." },
+],
+location: {
+center: [-102.1057, 25.25189],
+zoom: 4.7,
+pitch: 0,
+bearing: 0,
+},
+layers: [{
+id: 'ent_ecp', 
+pmtileUrl: "pmtiles:///data/ent\_ecp.pmtiles",
+sourceLayer: "ent\_ecp\_tile",
+layerType: "polygon",
+},
+]
+},
 
+juarez: {
+id: "juarez",
+title: "SÍ, AL DESARME - CIUDAD JUÁREZ, CHIH.",
+stats: [
+{ label: "XXXXX Armas canjeadas por efectivo." },
+],
+location: {
+center: [-106.45464, 31.73198],
+zoom: 8.9,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'ent_ecp', 
+pmtileUrl: "pmtiles:///data/cdjuarez.pmtiles",
+sourceLayer: "cdjuarez\_tile",
+layerType: "polygon",
+},
+]
+},
+
+celaya: {
+id: "celaya",
+title: "BRIGADAS POR LA PAZ - CELAYA, GTO.",
+stats: [
+{ label: "26,262 Atenciones brindadas." },
+{ label: "5,007 Domicilios visitados." },
+{ label: "1,773 Personas censadas." },
+{ label: "270 Peticiones recibidas." },
+{ label: "11 Comités de Paz." },
+{ label: "7 Ferias de paz." },
+],
+location: {
+center: [-100.81871, 20.52065],
+zoom: 10.4,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'Celaya', 
+pmtileUrl: "pmtiles:///data/Celaya.pmtiles",
+sourceLayer: "Celaya_tile",
+layerType: "polygon",
+},
+]
+},
+
+gam: {
+id: "gam",
+title: "SÍ, AL DESSARME - GUSTAVO A. MADERO, CDMX.",
+stats: [
+{ label: "XXXXX Armas canjeadas por efectivo." },
+],
+location: {
+center: [-99.11808, 19.50969],
+zoom: 11.8,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'gam', 
+pmtileUrl: "pmtiles:///data/gam.pmtiles",
+sourceLayer: "gam_tile",
+layerType: "polygon",
+},
+]
+},
+
+tlapa: {
+id: "tlapa",
+title: "TIANGUIS DEL BIENESTAR - TLAPA DE COMONFORT, GRO.",
+stats: [
+{ label: "XXXXX Atenciones brindadas." },
+],
+location: {
+center: [-98.685, 17.58],
+zoom: 10,
+pitch: 65,
+bearing: 0,
+},
+layers: [{
+id: 'tlapa', 
+pmtileUrl: "pmtiles:///data/tlapa-gro.pmtiles",
+sourceLayer: "tlapagro\_tile",
+layerType: "polygon",
+},
+]
+},
 
 };
