@@ -249,7 +249,7 @@ layerType: "polygon",
 
 gam: {
 id: "gam",
-title: "SÍ, AL DESSARME - GUSTAVO A. MADERO, CDMX.",
+title: "SÍ, AL DESARME - GUSTAVO A. MADERO, CDMX.",
 stats: [
 { label: "XXXXX Armas canjeadas por efectivo." },
 ],
