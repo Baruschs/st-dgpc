@@ -1,7 +1,3 @@
-// src/config/chapters.js   
-
-// import { type } from "os";
-
 export const chapters = {
 titulo: {
 id: "titulo",
@@ -25,7 +21,7 @@ stats: [
 "Su misión implica tanto el cumplimiento de normas nacionales e internacionales como el fortalecimiento de la democracia participativa en México. "
 },
 ],
-imageUrl: "/data/images/ind_mex.jpg",
+imageUrl: "{`${import.meta.env.BASE_URL}data/images/ind_mex.jpg",
 },
 
 imagen2: {
@@ -39,7 +35,7 @@ stats: [
 { label: "Supervisión y asesorría. " },
 { label: "Sistematización y mejora continua. " },
 ],
-imageUrl: "/data/images/trab_equipo.jpg",
+imageUrl: "///data/images/trab_equipo.jpg",
 },
 
 imagen3: {
@@ -47,7 +43,7 @@ id: "imagen3",
 type: "image",
 title: "CONSULTA INDÍGENA",
 description: `La Consulta Indígena a los pueblos indígenas y afromexicanos es un mecanismo esencial para la construcción de paz durarera y con justicia en el país`,
-imageUrl: "/data/images/Collage_1_con-ind.jpg",
+imageUrl: "///data/images/Collage_1_con-ind.jpg",
 },
 
 conind1: {
