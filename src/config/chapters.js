@@ -21,7 +21,7 @@ stats: [
 "Su misión implica tanto el cumplimiento de normas nacionales e internacionales como el fortalecimiento de la democracia participativa en México. "
 },
 ],
-imageUrl: "//data/images/ind_mex.jpg",
+imageUrl: "images://data/images/ind_mex.jpg",
 },
 
 imagen2: {
