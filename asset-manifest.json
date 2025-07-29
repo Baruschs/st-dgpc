@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/st-dgpc/static/css/main.4c315fc1.css",
+    "main.js": "/st-dgpc/static/js/main.912c30f6.js",
+    "static/js/453.7d88c0c0.chunk.js": "/st-dgpc/static/js/453.7d88c0c0.chunk.js",
+    "index.html": "/st-dgpc/index.html",
+    "main.4c315fc1.css.map": "/st-dgpc/static/css/main.4c315fc1.css.map",
+    "main.912c30f6.js.map": "/st-dgpc/static/js/main.912c30f6.js.map",
+    "453.7d88c0c0.chunk.js.map": "/st-dgpc/static/js/453.7d88c0c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c315fc1.css",
+    "static/js/main.912c30f6.js"
+  ]
+}
