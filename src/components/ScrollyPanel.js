@@ -5,9 +5,7 @@ import { useInView } from "react-intersection-observer";
 import "./ScrollyPanel.css";
 
 const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
+  const { ref, inView } = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
@@ -18,65 +16,63 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
   const panelClasses = `scrolly-panel ${className || ""}`;
 
   const renderTitle = () => {
-    // Capítulo especial con stats
-    if (chapter.stats) {
-      return (
-        <div className="custom-title">
-          <div className="main-title">{chapter.title}</div>
-          <ul className="custom-list">
-            {chapter.stats.map((stat, index) => (
-              <li key={index} className="custom-item">
-                <span className="icon">&#8226;</span> {stat.value} {stat.label}
-              </li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
-
-    // Capítulo título principal
+    // Capítulo especial (título principal de portada)
     if (chapter.id === "titulo") {
       return (
         <div className="logo-container">
-            <img src= "data/images/goberw.png"
-              alt="Secretaría de Gobernación"
-              className="gobernacion-logo"
-            />
-        <div className="custom-title">
-          <div className="main-title">DIRECCIÓN GENERAL DE</div>
-          <div className="main-title">PARTICIPACIÓN Y CONSULTAS</div>
-         
-            </div>
+          <img
+            src="data/images/goberw.png"
+            alt="Secretaría de Gobernación"
+            className="gobernacion-logo"
+          />
+          <div className="custom-title">
+            <div className="main-title">DIRECCIÓN GENERAL DE</div>
+            <div className="main-title">PARTICIPACIÓN Y CONSULTAS</div>
+          </div>
           <div className="flecha-container">
-            <svg className="flecha-svg"
+            <svg
+              className="flecha-svg"
               viewBox="0 0 32 10"
               fill="none"
-              xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              {" "}
-              <path d="M1 1L16 9L31 1" stroke="white" strokeWidth="2" />{" "}
+              <path d="M1 1L16 9L31 1" stroke="white" strokeWidth="2" />
             </svg>
           </div>
         </div>
       );
     }
 
-    // Otros capítulos normales
+    // Capítulos normales
     return <h2>{chapter.title}</h2>;
   };
 
   return (
     <section ref={ref} className={panelClasses}>
       <div className="scrolly-panel-content">
+        {/* 1. Título */}
         {renderTitle()}
-        {!chapter.stats && (
+
+        {/* 2. Descripción */}
+        {chapter.description && (
           <div
             dangerouslySetInnerHTML={{
               __html: formatDescription(chapter.description),
             }}
           />
         )}
-      </div>
+
+        {/* 3. Stats */}
+        {chapter.stats && (
+          <ul className="styled-list">
+            {chapter.stats.map((stat, index) => (
+              <li key={index}>
+                <span className="icon">&#8226;</span> {stat.label}
+              </li>
+            ))}
+          </ul>
+        )}
+              </div>
     </section>
   );
 };

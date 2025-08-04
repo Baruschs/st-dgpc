@@ -9,7 +9,7 @@ import "./App.css";
 import "./components/MapSwitcher.css";
 
 const mapStyles = {
-  Claro: "https://www.mapabase.atdt.gob.mx/style_3d.json",
+  Claro: "https://www.mapabase.atdt.gob.mx/style_white_3d_places.json",
   Oscuro: "https://www.mapabase.atdt.gob.mx/style_black_3d_places.json",
   Satelital: "https://www.mapabase.atdt.gob.mx/style_satellite.json",
 };
@@ -18,7 +18,7 @@ function App() {
   const [activeChapterId, setActiveChapterId] = useState(
     Object.keys(chapters)[0]
   );
-  const [styleUrl, setStyleUrl] = useState(mapStyles.Oscuro);
+  const [styleUrl, setStyleUrl] = useState(mapStyles.Claro);
   const [isPulsing, setIsPulsing] = useState(false);
 
   const handleChapterEnter = useCallback((chapterId) => {
