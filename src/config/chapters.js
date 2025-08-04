@@ -11,281 +11,242 @@ bearing: 0,
 },
 },
 
-imagen1: {
-id: "imagen1",
-type: "image",
-title: "¿QUÉ ES LA DGPC?",
-description: `La Dirección General de Participación y Consultas (DGPC) es una unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo al marco normativo y mejores estándares aplicables.`,
+objetivo: {
+id: "objetivo",
+type: "map",
+title: "OBJETIVO",
+description: "Las Mesas de Paz son espacios de colaboración entre todos los niveles de Gobierno y la ciudadanía para construir estrategias de paz y bienestar. Entre sus objetivos están:",
 stats: [
-{ label:
-"Su misión implica tanto el cumplimiento de normas nacionales e internacionales como el fortalecimiento de la democracia participativa en México. "
-},
-],
-imageUrl: "./data/images/ind_mex.jpg",
-},
-
-imagen2: {
-id: "imagen2",
-type: "image",
-title: "FUNCIONES SUSTANTIVAS",
-description: `Órgano estratégico de la AdmnistraciónPública Federal mexicana, cuya función principal es diseñar, coordinar, supervisar y evaluar políticas públicas y procesos relacionados con l aparticipación social y la consulta indígena.`,
-stats: [
-{ label: "Diseño y normatividad. " },
-{ label: "Coordinación interinstitucional y representación. " },
-{ label: "Supervisión y asesorría. " },
-{ label: "Sistematización y mejora continua. " },
-],
-imageUrl: "./data/images/trab_equipo.jpg",
-},
-
-imagen3: {
-id: "imagen3",
-type: "image",
-title: "CONSULTA INDÍGENA",
-description: `La Consulta Indígena a los pueblos indígenas y afromexicanos es un mecanismo esencial para la construcción de paz durarera y con justicia en el país`,
-imageUrl: "./data/images/Collage_1_con-ind.jpg",
-},
-
-conind1: {
-id: "conind1",
-type: "map",
-title: "CONSULTA INDÍGENA",
-description:
-"A los pueblos Yaquis sobre la Manifestación de Impacto Ambiental (MIA) y operación del Acueducto Independencia.",
-location: {
-center: [-110.03709, 27.35844],
-zoom: 9,
-pitch: 65,
-bearing: 0,
-},
-pmtileUrl: "pmtiles://data/terr_yaqui.pmtiles",
-sourceLayer: "terr_yaqui_tile",
-layerType: "polygon",
-},
-
-conind2: {
-id: "conind2",
-type: "map",
-title: "CONSULTA INDÍGENA",
-description: "Del Proyecto Vista Pacífico",
-location: {
-center: [-109.054, 25.59],
-zoom: 14,
-pitch: 65,
-bearing: 0,
-},
-pmtileUrl: "pmtiles://data/Topolobampo.pmtiles",
-sourceLayer: "Topolobampo_tile",
-layerType: "polygon",
-},
-
-conind3: {
-id: "conind3",
-type: "map",
-title: "CONSULTA INDÍGENA",
-description: "Para el Proyecto Helax",
-location: {
-center: [-95.2, 16.1],
-zoom: 10,
-pitch: 65,
-bearing: 0,
-},
-pmtileUrl: "pmtiles://data/mun_Helax.pmtiles",
-sourceLayer: "mun_Helax_tile",
-layerType: "polygon",
-},
-
-leygraldpia: {
-id: "leygraldpia",
-type: "map",
-title: "LEY GENERAL SOBRE LOS DERECHOS DE LOS PUEBLOS INDÍGENAS Y AFROMEXICANOS",
-stats: [
-{ label: "Se trabaja en corrdinación con el Comité Técnico." },
-{ label: "Se realizan sesiones de trabajo con los representantes de los pueblos indígenas." },
-{ label: "Se realizan las consultas en los pueblos indígenas para la aprobacion de la Ley." },
+{ label: "Promover la cultura de paz entre la ciudadanía y los servidores públicos." },
+{ label: "Generar estrategias de colaboración entre los tres órdenes de gobierno y las comunidades." },
+{ label: "Garantizar condiciones de bienestar y prosperidad de la población y sus comunidades." },
 ],
 location: {
 center: [-102.1057, 25.25189],
 zoom: 4.7,
-pitch: 0,
+pitch: 30,
 bearing: 0,
 },
-pmtileUrl: "pmtiles://data/comunidades_inpi.pmtiles",
-sourceLayer: "comunidades_inpi_tile",
-layerType: "point",
+pmtileUrl: "pmtiles://data/Guana.pmtiles",
+sourceLayer: "Guana_tile",
+layerType: "polygon",
 },
 
-trenmexqro: {
-id: "trenmexqro",
+actividad1: {
+id: "actividad1",
 type: "map",
-title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
-stats: [
-{ label: "Tren Ciudad de México hacia el estado de Querétaro" },
-],
+title: "ACTIVIDADES REALIZADAS",
+description: "Durante el periodo noviembre 2024 y febrero 2025 se llevaron a cabo 10 brigadas, de las cuáles la DGCCPS participó en 8.",
 location: {
-center: [-99.80342, 20.10214],
-zoom: 8.4,
-pitch: 65,
-bearing: 0,
+      center: [-100.81094, 20.52193],
+      zoom: 10,
+      pitch: 0,
+      bearing: 0,
 },
-layers: [{
-id: 'ent-Mex-Qro',
-pmtileUrl: "pmtiles://data/ent_Tren_Mex-Qro.pmtiles",
-sourceLayer: "ent_Tren_MexQro_tile",
-layerType: "polygon",
-},
-{
-id: 'trazomeqro',
-pmtileUrl: "pmtiles://data/trazo_Mex-Qro.pmtiles",
-sourceLayer: "trazo_MexQro_tile",
-layerType: "line",
-// 👇 Coordenadas añadidas para este tramo
-startCoords: [-99.151472, 19.451804],
-endCoords: [-100.4164969, 20.6007303]
-}
-]
-},
-
-trenaifapach: {
-id: "trenaifapach",
-type: "map",
-title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
-stats: [
-{ label: "Tren Aeropuerto Internacional Felipe Ángeles (AIFA) a Pachuca, Hgo." },
-],
-location: {
-center: [-98.89374, 19.89560],
-zoom: 9.6,
-pitch: 65,
-bearing: 0,
-},
-layers: [{
-id: 'ent-AIFA-Pach',
-pmtileUrl: "pmtiles://data/ent_AIFA-Pachuca.pmtiles",
-sourceLayer: "ent_AIFAPachuca_tile",
-layerType: "polygon",
-},
-{
-id: 'trazoaifapach', // Cambiado ID para que sea único
-pmtileUrl: "pmtiles://data/trazo_AIFA-Pachuca.pmtiles",
-sourceLayer: "trazo_AIFAPachuca_tile",
-layerType: "line",
-// 👇 Coordenadas añadidas para este tramo (con la corrección de typo)
-startCoords: [-99.077292, 19.70631],
-endCoords: [-98.747895, 20.06939]
-}
-]
-},
-
-estconstpaz: {
-id: "estconstpaz",
-title: "ESTRATEGIA DE CONSTRUCCION DE PAZ",
-stats: [
-{ label: "BRIGADAS POR LA PAZ (Chihuahua y Guanajuato)." },
-{ label: "SÍ, AL DESARME (Ciudad de México)." },
-{ label: "TIANGUIS DEL BIENESTAR (Guerrero)." },
-],
-location: {
-center: [-102.1057, 25.25189],
-zoom: 4.7,
-pitch: 0,
-bearing: 0,
-},
-layers: [{
-id: 'ent_ecp', 
-pmtileUrl: "pmtiles://data/ent_ecp.pmtiles",
-sourceLayer: "ent_ecp_tile",
-layerType: "polygon",
-},
-]
-},
-
-juarez: {
-id: "juarez",
-title: "SÍ, AL DESARME - CIUDAD JUÁREZ, CHIH.",
-stats: [
-{ label: "XXXXX Armas canjeadas por efectivo." },
-],
-location: {
-center: [-106.45464, 31.73198],
-zoom: 8.9,
-pitch: 65,
-bearing: 0,
-},
-layers: [{
-id: 'ent_ecp', 
-pmtileUrl: "pmtiles://data/cdjuarez.pmtiles",
-sourceLayer: "cdjuarez_tile",
-layerType: "polygon",
-},
-]
-},
-
-celaya: {
-id: "celaya",
-title: "BRIGADAS POR LA PAZ - CELAYA, GTO.",
-stats: [
-{ label: "26,262 Atenciones brindadas." },
-{ label: "5,007 Domicilios visitados." },
-{ label: "1,773 Personas censadas." },
-{ label: "270 Peticiones recibidas." },
-{ label: "11 Comités de Paz." },
-{ label: "7 Ferias de paz." },
-],
-location: {
-center: [-100.81871, 20.52065],
-zoom: 10.4,
-pitch: 65,
-bearing: 0,
-},
-layers: [{
-id: 'Celaya', 
 pmtileUrl: "pmtiles://data/Celaya.pmtiles",
 sourceLayer: "Celaya_tile",
 layerType: "polygon",
 },
-]
-},
 
-gam: {
-id: "gam",
-title: "SÍ, AL DESARME - GUSTAVO A. MADERO, CDMX.",
-stats: [
-{ label: "XXXXX Armas canjeadas por efectivo." },
-],
-location: {
-center: [-99.11808, 19.50969],
-zoom: 11.8,
-pitch: 65,
-bearing: 0,
-},
-layers: [{
-id: 'gam', 
-pmtileUrl: "pmtiles://data/gam.pmtiles",
-sourceLayer: "gam_tile",
+actividad2: {
+id: "actividad2",
+type: "map",
+title: "ACTIVIDADES REALIZADAS",
+description: "Hasta febrero de 2025 los brigadistas de la DGCCPS han cubierto 8 colonias del municipio de Celaya.",
+   location: {
+      center: [-100.81094, 20.556],
+      zoom: 11.7,
+      pitch: 0,
+      bearing: 0,
+    },
+pmtileUrl: "pmtiles://data/8_col_Celaya.pmtiles",
+sourceLayer: "8_col_Celaya_tile",
 layerType: "polygon",
 },
-]
+
+snjuanvega: {
+    id: "snjuanvega",
+    title: "SAN JUAN DE LA VEGA",
+    stats: [
+      { value: "516", label: "Hogares visitados" },
+      { value: "182", label: "Personas censadas" },
+      { value: "11", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.76221, 20.62640],
+      zoom: 15,
+      pitch: 65,
+      bearing: 0,
+    },
+    pmtileUrl: "pmtiles://data/snjuanvega.pmtiles",
+    sourceLayer: "snjuanvega_tile",
+    layerType: "polygon",
+    photoUrl: "fotos/snjuandelavega.jpeg",
+  
 },
 
-tlapa: {
-id: "tlapa",
-title: "TIANGUIS DEL BIENESTAR - TLAPA DE COMONFORT, GRO.",
-stats: [
-{ label: "XXXXX Atenciones brindadas." },
-],
-location: {
-center: [-98.685, 17.58],
-zoom: 10,
-pitch: 65,
-bearing: 0,
-},
-layers: [{
-id: 'tlapa', 
-pmtileUrl: "pmtiles://data/tlapa-gro.pmtiles",
-sourceLayer: "tlapagro_tile",
+  villasbajio: {
+    id: "villasbajio",
+    type: "map",
+    title: "VILLAS DEL BAJÍO",
+    stats: [
+      { value: "1,568", label: "Hogares visitados" },
+      { value: "438", label: "Personas censadas" },
+      { value: "38", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.865, 20.557],
+      zoom: 16.5,
+      pitch: 65,
+      bearing: 0,
+    },
+pmtileUrl: "pmtiles://data/villabajio.pmtiles",
+sourceLayer: "villabajio_tile",
 layerType: "polygon",
+photoUrl: "data/images/villasbajio.jpg",
 },
-]
+
+emilianoz: {
+    id: "emilianoz",
+    title: "EMILIANO ZAPATA",
+    type: "map",
+    stats: [
+      { value: "450", label: "Hogares visitados" },
+      { value: "172", label: "Personas censadas" },
+      { value: "19", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.800, 20.54187],
+      zoom: 15.5,
+      pitch: 65,
+      bearing: 0,
+    },
+    pmtileUrl: "pmtiles://data/emilianozapata.pmtiles",
+    sourceLayer: "emilianozapata_tile",
+    layerType: "polygon",
+    photoUrl: "data/images/emilianozapata.jpg",
+  },
+
+snmigueloctopan: {
+    id: "snmigueloctopan",
+    title: "SAN MIGUEL OCTOPAN",
+    type: "map",
+    stats: [
+      { value: "672", label: "Hogares visitados" },
+      { value: "167", label: "Personas censadas" },
+      { value: "22", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.75034, 20.57457],
+      zoom: 15.5,
+      pitch: 65,
+      bearing: 0,
+    },
+    pmtileUrl: "pmtiles://data/snmigueloctopan.pmtiles",
+    sourceLayer: "snmigueloctopan_tile",
+    layerType: "polygon",
+    photoUrl: "data/images/snmigueloctopan.jpg",
+  },
+
+lagos: {
+    id: "lagos",
+    title: "LAGOS",
+    stats: [
+      { value: "332", label: "Hogares visitados" },
+      { value: "112", label: "Personas censadas" },
+      { value: "17", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.8351, 20.50],
+      zoom: 15.5,
+      pitch: 65,
+      bearing: 0,
+    },
+    pmtileUrl: "pmtiles://data/lagos.pmtiles",
+    sourceLayer: "lagos_tile",
+    layerType: "polygon",
+    photoUrl: "data/images/lagos.jpg",
+  },
+
+monteblanco: {
+    id: "monteblanco",
+    title: "MONTE BLANCO",
+    stats: [
+      { value: "508", label: "Hogares visitados" },
+      { value: "301", label: "Personas censadas" },
+      { value: "10", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.83, 20.503],
+      zoom: 16,
+      pitch: 65,
+      bearing: 0,
+    },
+    pmtileUrl: "pmtiles://data/monteblanco.pmtiles",
+    sourceLayer: "monteblanco_tile",
+    layerType: "polygon",
+    photoUrl: "data/images/monteblanco.jpg",
+  },
+
+ranchoseco: {
+    id: "ranchoseco",
+    type: "map",
+    title: "RANCHO SECO",
+    stats: [
+      { value: "851", label: "Hogares visitados" },
+      { value: "278", label: "Personas censadas" },
+      { value: "115", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.810, 20.493],
+      zoom: 14.8,
+      pitch: 65,
+      bearing: 0,
+    },
+pmtileUrl: "pmtiles://data/ranchoseco.pmtiles",
+sourceLayer: "ranchoseco_tile",
+layerType: "polygon",
+photoUrl: "data/images/ranchoseco.jpg",
 },
+
+rincontamayo: {
+    id: "rincontamayo",
+    type: "map",
+    title: "RINCÓN DE TAMAYO",
+    stats: [
+      { value: "782", label: "Hogares visitados" },
+      { value: "290", label: "Personas censadas" },
+      { value: "60", label: "Peticiones recibidas" },
+    ],
+    location: {
+      center: [-100.75966, 20.41852],
+      zoom: 15,
+      pitch: 65,
+      bearing: 0,
+    },
+pmtileUrl: "pmtiles://data/rincontamayo.pmtiles",
+sourceLayer: "rincontamayo_tile",
+layerType: "polygon",
+photoUrl: "data/images/rincontamayo.jpg",
+},
+
+imágenes: {
+  id: "imágenes",
+  title: "BRIGADA EN VILLAS DEL BAJÍO",
+  description: "Brigada realizada en noviembre 2024, donde se atendieron hogares y se recabaron peticiones ciudadanas.",
+  imageUrl: "https://www.celaya.gob.mx/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-04-at-12.46.14-PM-2.jpeg ",
+},
+
+imágenes2: {
+  id: "imágenes2",
+  title: "ENTREGA DE APOYOS",
+  description: "Entrega de apoyos coordinada por la DGPC en colaboración con instancias locales.",
+  imageUrl: "https://www.celaya.gob.mx/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-04-at-12.46.23-PM.jpeg ",
+},
+
+video: {
+  id: "video",
+  title: "FINAL",
+  videoUrl: "data/videos/final.mp4"
+}
 };

@@ -25,21 +25,31 @@ const Map = ({ location, activeChapterId, styleUrl }) => {
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    const mapInstance = new maplibregl.Map({
-      container: mapContainerRef.current,
-      style: styleUrl,
-      center: location.center,
-      zoom: location.zoom,
-      pitch: location.pitch,
-      bearing: location.bearing,
-      interactive: false,
-    });
+  const mapInstance = new maplibregl.Map({
+    container: mapContainerRef.current,
+    style: styleUrl,
+    center: location.center,
+    zoom: location.zoom,
+    pitch: location.pitch,
+    bearing: location.bearing,
+    interactive: false,
+    attributionControl: false, // Desactivamos el default
+  });
+
+  // ✅ Añadimos manualmente el control con nuestra atribución
+  mapInstance.addControl(
+    new maplibregl.AttributionControl({
+      compact: true,
+      customAttribution: `<a href="https://www.gob.mx/segob" target="_blank" rel="noopener noreferrer">Secretaría de Gobernación</a>`,
+    }),
+    'bottom-right'
+  );
 
     mapInstance.on("load", () => {
       mapRef.current = mapInstance;
       setMap(mapInstance);
       // Ajustar cámara al cargar
-      mapInstance.flyTo({ ...location, duration: 2000 });
+      mapInstance.flyTo({ ...location, duration: 5000 });
     });
 
     return () => {
@@ -112,51 +122,9 @@ const Map = ({ location, activeChapterId, styleUrl }) => {
           type: "line", 
           source: sourceId, 
           "source-layer": layerConfig.sourceLayer, 
-          paint: { "line-color": "#FFFFFF", "line-width": 2 } 
+          paint: { "line-color": "#ffffff", "line-width": 3 } 
         }, firstSymbolId);
-      
-      } else if (layerConfig.layerType === "point") {
-        map.addLayer({ 
-          id: `${sourceId}-circle`, 
-          type: "circle", 
-          source: sourceId, 
-          "source-layer": layerConfig.sourceLayer, 
-          paint: { 
-            "circle-radius": 1.5, 
-            "circle-stroke-width": 0, 
-            "circle-color": ["match",["get","NOM_ENT"],
-              "Baja California","#0D47A1",
-              "Campeche","#FF6F00",
-              "Chiapas","#2E7D32",
-              "Chihuahua","#D4A017",
-              "Ciudad de México","#C2185B",
-              "Coahuila","#D32F2F",
-              "Colima","#E64A19",
-              "Durango","#00695C",
-              "Guanajuato","#FBC02D",
-              "Guerrero","#00ACC1",
-              "Hidalgo","#7B1FA2",
-              "Jalisco","#1976D2",
-              "México","#880E4F",
-              "Michoacán de Ocampo","#F57C00",
-              "Morelos","#EC407A",
-              "Nayarit","#004D40",
-              "Oaxaca","#9C27B0",
-              "Puebla","#303F9F",
-              "Querétaro Arteaga","#512DA8",
-              "Quintana Roo","#00BFA5",
-              "San Luis Potosí","#E57373",
-              "Sinaloa","#388E3C",
-              "Sonora","#FFA000",
-              "Tabasco","#1B5E20",
-              "Tlaxcala","#FF5252",
-              "Veracruz de Ignacio de la Llave","#0277BD",
-              "Yucatán","#0097A7",
-              "Zacatecas","#AD1457",
-              "#cccccc"]
-          }
-        }, firstSymbolId);
-      
+       
       } else if (layerConfig.layerType === "line") {
         map.addLayer({ 
           id: `${sourceId}-line`, 

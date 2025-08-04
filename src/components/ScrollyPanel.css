@@ -5,29 +5,24 @@
   display: flex;
   box-sizing: border-box;
   align-items: center;
-
-  /* ---- AJUSTES DE ANIMACIÓN ---- */
-  /* 1. HACEMOS QUE LOS PANELES INACTIVOS SEAN TOTALMENTE TRANSPARENTES */
   opacity: 0;
-  /* 2. AUMENTAMOS EL TIEMPO DE LA TRANSICIÓN PARA QUE SEA MÁS LENTA */
   transition: opacity 1.2s ease-in-out;
 }
 
-/* Solo el panel ACTIVO se vuelve completamente visible */
 .scrolly-panel.is-active {
   opacity: 1;
 }
 
 /* El resto del código no necesita cambios */
 .scrolly-panel .scrolly-panel-content {
-  background: rgba(23, 27, 30, 0.3);
+  background: rgba(23, 27, 30, 0.5);
   backdrop-filter: blur(5px);
   color: white;
   padding: 1.5rem;
-  border-radius: 8px;
-  max-width: 450px;
-  margin-left: 3rem;
-  border-left: 4px solid #611232;
+  border-radius: 16px;
+  max-width: 20%;
+  margin-left: 4rem;
+  border-left: 10px solid #611232;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: left;
   pointer-events: auto;
@@ -37,15 +32,15 @@
 .scrolly-panel.is-title-card {
   justify-content: center;
   align-items: flex-start;
-  padding-top: 1vh;
+  padding-top: .2vh;
 }
 
 .scrolly-panel.is-title-card .scrolly-panel-content {
   background: rgba(23, 27, 30, 0.5);
   backdrop-filter: none;
-  max-width: 900px;
+  max-width: 600px;
   border: none;
-  box-shadow: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   margin-left: 0;
   text-align: center;
   animation: zoom-in 0.8s ease-out;
@@ -72,28 +67,27 @@
   }
 }
 
-/* --- CONTENEDOR DEL TÍTULO PERSONALIZADO --- */
 .custom-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   margin-bottom: 1rem;
 }
 
 /* Título principal */
 .main-title {
-  font-size: 2.2em;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 0.3rem;
+  margin-bottom: .5rem;
 }
 
 /* Subtítulo en negrita */
 .subtitle-bold {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: bold;
   color: #ffffff; /* Color destacado */
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Subtítulo normal */
@@ -123,7 +117,7 @@
   left: 0;
   top: 0;
   font-size: 1.5rem;
-  color: #a57f2c; /* Color llamativo */
+  color: #a57f2c;
 }
 
 .custom-title ul.custom-list {
@@ -153,31 +147,94 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem; /* Espacio arriba del logo */
-  margin-bottom: 2rem; /* Espacio debajo de la fecha */
+  margin-top: .5rem; /* Espacio arriba del logo */
+  margin-bottom: .5rem; /* Espacio debajo de la fecha */
 }
 
 .gobernacion-logo {
-  max-width: 300px; /* Ajusta el tamaño del logo como necesites */
+  max-width: 250px; /* Ajusta el tamaño del logo como necesites */
   height: auto;
   margin-top: 0rem;
-  margin-bottom: 1rem; /* Espacio entre el logo y la fecha */
+  margin-bottom: .5rem; /* Espacio entre el logo y la fecha */
 }
 
 .flecha-container {
 display: flex;
 justify-content: center;
-margin-top: 1rem;
-width: 15%;
+margin-top: .5rem;
+width: 25%;
 }
 
 .flecha-svg {
-width: 3rem; 
+width: 4rem; 
 height: auto;
 stroke: white; 
-stroke-width: 2px;
+stroke-width: 1px;
 fill: none;
 animation: parpadeo-suave 1s infinite ease-in-out !important; 
+}
+
+.camera-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;        
+  border: none;            
+  color: white;             
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-button:hover {
+  color: #e6d194; /* dorado al pasar el mouse (opcional) */
+}
+
+/* Estilos para modal de imagen */
+.photo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: #611232 10px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.photo-modal {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10000;
+}
+
+.photo-modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 4px solid white;
+}
+
+.close-photo {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  font-size: 2rem;
+  background: black;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  padding: 0.3rem 0.4rem;
+  cursor: pointer;
+  z-index: 10001;
 }
 
 @keyframes parpadeo-suave {
@@ -190,4 +247,8 @@ opacity: 0.1;
 100% {
 opacity: 1;
 }
+
+
+
+
 }
