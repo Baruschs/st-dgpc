@@ -74,10 +74,29 @@
   margin-bottom: 0.5rem;
 }
 .image-panel-content .styled-list .icon {
-   font-size: 18px; /* Reduce tamaño para que no se desborde */
+  font-size: 18px; /* Reduce tamaño para que no se desborde */
   color: #a57f2c;
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.5rem;
+}
+
+.bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #a57f2c; /* Dorado */
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.styled-list li,
+.custom-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
 }

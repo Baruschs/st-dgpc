@@ -67,7 +67,9 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
           <ul className="styled-list">
             {chapter.stats.map((stat, index) => (
               <li key={index}>
-                <span className="icon">&#8226;</span> {stat.label}
+                <span className="bullet"></span>
+                <span className="bullet-text">{stat.label}</span>
+
               </li>
             ))}
           </ul>

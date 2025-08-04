@@ -31,7 +31,8 @@ const ImagePanel = ({ imageUrl, title, description, stats, onChapterEnter, chapt
           <ul className="styled-list">
             {stats.map((stat, index) => (
               <li key={index}>
-                <span className="icon">&#8226;</span> {stat.label}
+                <span className="bullet"></span>
+                <span className="bullet-text">{stat.label}</span>
               </li>
             ))}
           </ul>
