@@ -11,7 +11,7 @@ import "./components/MapSwitcher.css";
 const mapStyles = {
   Claro: "https://www.mapabase.atdt.gob.mx/style_white_3d_places.json",
   Oscuro: "https://www.mapabase.atdt.gob.mx/style_black_3d_places.json",
-  Satelital: "https://www.mapabase.atdt.gob.mx/style_satellite.json",
+  Satelital: "https://api.maptiler.com/maps/hybrid/style.json?key=QAha5pFBxf4hGa8Jk5zv",
 };
 
 function App() {

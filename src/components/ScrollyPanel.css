@@ -1,4 +1,21 @@
-/* src/components/ScrollyPanel.css */
+.scrolly-panel h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.scrolly-panel h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 330px; /* Puedes ajustar el ancho */
+  height: 2px;
+  background-color: #a57f2c; /* Color de bullet */
+  border-radius: 1px;
+}
 
 .scrolly-panel {
   min-height: 100vh;
@@ -25,7 +42,7 @@
   color: white;
   padding: 1.5rem;
   border-radius: 8px;
-  max-width: 300px;
+  max-width: 360px;
   margin-left: 3rem;
   border-left: 4px solid #611232;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);

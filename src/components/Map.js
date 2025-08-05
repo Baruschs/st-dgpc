@@ -34,27 +34,53 @@ const Map = ({ location, activeChapterId, styleUrl }) => {
       interactive: false,
     });
 
+      mapInstance.on("load", () => {
+          mapRef.current = mapInstance;
+          setMap(mapInstance);
+
+          if (styleUrl.includes("satellite3d")) {
+            mapInstance.once("sourcedata", (e) => {
+              if (e.isSourceLoaded && mapInstance.getSource("terrainSource")) {
+                mapInstance.setTerrain({ source: "terrainSource", exaggeration: 3.0 });
+                mapInstance.addLayer({
+                  id: "sky",
+                  type: "sky",
+                  paint: {
+                    "sky-type": "atmosphere",
+                    "sky-atmosphere-sun": [180, 30],
+                    "sky-atmosphere-sun-intensity": 40,
+                    "sky-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0, 5, 0.3, 8, 1],
+                    "horizon-fog-blend": 0.8,
+                    "fog-color": "#a0c8f0",
+                    "fog-ground-blend": 0.3
+                  }
+                });
+              }
+            });
+          }
+        });
+
     mapInstance.on("load", () => {
-      mapRef.current = mapInstance;
-      setMap(mapInstance);
-      mapInstance.flyTo({ ...location, duration: 2000 });
 
-      const attributionEl = document.querySelector(".maplibregl-ctrl-attrib-inner");
-      if (attributionEl) {
-        const segobLink = document.createElement("a");
-        segobLink.href = "https://www.gob.mx/segob";
-        segobLink.target = "_blank";
-        segobLink.rel = "noopener noreferrer";
-        segobLink.textContent = "Secretaría de Gobernación";
+        mapInstance.flyTo({ ...location, duration: 2000 });
 
-        attributionEl.insertBefore(segobLink, attributionEl.firstChild);
+        const attributionEl = document.querySelector(".maplibregl-ctrl-attrib-inner");
+        if (attributionEl) {
+          const segobLink = document.createElement("a");
+          segobLink.href = "https://www.gob.mx/segob";
+          segobLink.target = "_blank";
+          segobLink.rel = "noopener noreferrer";
+          segobLink.textContent = "Secretaría de Gobernación";
 
-        if (attributionEl.children.length > 1) {
-          const separator = document.createTextNode(" | ");
-          attributionEl.insertBefore(separator, segobLink.nextSibling);
+          attributionEl.insertBefore(segobLink, attributionEl.firstChild);
+
+          if (attributionEl.children.length > 1) {
+            const separator = document.createTextNode(" | ");
+            attributionEl.insertBefore(separator, segobLink.nextSibling);
+          }
         }
-      }
-    });
+      });
+
 
     return () => {
       if (mapInstance) {

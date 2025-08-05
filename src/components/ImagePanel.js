@@ -21,10 +21,10 @@ const ImagePanel = ({ imageUrl, title, description, stats, onChapterEnter, chapt
   return (
     <section
       ref={ref}
-      className={`image-panel-fixed ${inView ? "visible" : ""}`}
+      className={`scrolly-panel image-panel-fixed ${inView ? "visible" : ""}`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div ref={textRef} className="image-panel-content">
+      <div ref={textRef} className="scrolly-panel-content">
         {title && <h2>{title}</h2>}
         {description && <p>{description}</p>}
         {stats && (
@@ -32,7 +32,10 @@ const ImagePanel = ({ imageUrl, title, description, stats, onChapterEnter, chapt
             {stats.map((stat, index) => (
               <li key={index}>
                 <span className="bullet"></span>
-                <span className="bullet-text">{stat.label}</span>
+                <span
+                  className="bullet-text"
+                  dangerouslySetInnerHTML={{ __html: stat.label }}
+                />
               </li>
             ))}
           </ul>

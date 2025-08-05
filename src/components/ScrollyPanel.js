@@ -44,8 +44,13 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
       );
     }
 
-    // Capítulos normales
-    return <h2>{chapter.title}</h2>;
+    return (
+      <h2
+        dangerouslySetInnerHTML={{
+          __html: chapter.title.replace(/\n/g, "<br/>"),
+        }}
+      />
+    );
   };
 
   return (
@@ -69,7 +74,10 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
             {chapter.stats.map((stat, index) => (
               <li key={index}>
                 <span className="bullet"></span>
-                <span className="bullet-text">{stat.label}</span>
+                <span
+                  className="bullet-text"
+                  dangerouslySetInnerHTML={{ __html: stat.label }}
+                />
 
               </li>
             ))}

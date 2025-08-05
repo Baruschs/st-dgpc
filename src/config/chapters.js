@@ -15,7 +15,7 @@ imagen1: {
 id: "imagen1",
 type: "image",
 title: "¿QUIÉNES SOMOS?",
-description: `La DGPC es la unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo al marco normativo y mejores estándares aplicables.`,
+description: `Somos la unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo con el marco normativo y mejores estándares aplicables.`,
 imageUrl: "./data/images/ind_mex.jpg",
 },
 
@@ -25,9 +25,9 @@ type: "image",
 title: "FUNCIONES",
 description: `Algunas de nuestras funciones son:`,
 stats: [
-{ label: "Fungir en materia de asuntos indígenas, dentro de su ámbito de competencia, como enlace y representante de la Secretaría de Gobernación." },
-{ label: "Vigilar que los procesos de participación y consultas de competencia federal se realicen conforme a la normativa aplicable." },
-{ label: "Colaborar en el cumplimiento de los objetivos de las unidades administrativas adscritas a la Subsecretaría de Construcción de Paz, Participación Social y Asuntos Religiosos." },
+{ label: "Fungir en materia de asuntos indígenas, como enlace y representante de la <strong>Secretaría de Gobernación</strong>." },
+{ label: "Vigilar que los procesos de participación y consultas se realicen conforme a la normativa aplicable." },
+{ label: "Colaborar en el cumplimiento de los objetivos de la <strong>Subsecretaría de Construcción de Paz, Participación Social y Asuntos Religiosos</strong>." },
 ],
 imageUrl: "./data/images/trab_equipo.jpg",
 },
@@ -36,7 +36,7 @@ imagen3: {
 id: "imagen3",
 type: "image",
 title: "CONSULTAS INDÍGENAS",
-description: `La consulta a los pueblos indígenas y afromexicanos es un mecanismo esencial para la construcción de una paz duradera y con justicia en el país. Te presentamos los temas de consultas que están en análisis.`,
+description: `La consulta a los pueblos indígenas y afromexicanos es un mecanismo esencial para la construcción de una paz duradera y con justicia en el país. Te presentamos los temas de consultas que están en análisis: `,
 imageUrl: "./data/images/Collage_1_con-ind.jpg",
 },
 
@@ -44,16 +44,16 @@ conind1: {
 id: "conind1",
 type: "map",
 title: "CONSULTAS INDÍGENAS",
-description: `Consulta a los pueblos yaquis sobre la Manifestación de Impacto Ambiental (MIA) y operación del Acueducto Independencia.`,
+description: `<strong>CONSULTA A LOS PUEBLOS YAQUIS SOBRE LA MANIFESTACIÓN DE IMPACTO AMBIENTAL (MIA) Y OPERACIÓN DEL ACUEDUCTO INDEPENDENCIA.</strong>`,
 stats: [
-{ label: "Estas consultas han buscado que los pueblos yaquis de sean informados y que participen en las decisiones que afectan su territorio y recursos hídricos." },
+{ label: "Informar a los pueblos yaquis de sean informados y participen en las decisiones que afectan su territorio y recursos hídricos." },
 { label: "Se llevan a cabo consultas a los pueblos yaquis." },
-{ label: "El proceso ha sido supervisado por la Secretaría de Gobernación para garantizar su legalidad y legitimidad." },
+{ label: "El proceso ha sido supervisado por la <strong>Secretaría de Gobernación</strong> para garantizar su legalidad y legitimidad." },
 ],
 location: {
 center: [-110.03709, 27.35844],
 zoom: 9,
-pitch: 65,
+pitch: 70,
 bearing: 0,
 },
 layers: [{
@@ -74,11 +74,11 @@ conind2: {
 id: "conind2",
 type: "map",
 title: "CONSULTAS INDÍGENAS",
-description: "Consulta Indígena del Proyecto Vista Pacífico",
+description: "<strong>CONSULTA INDÍGENA DEL PROYECTO VISTA PACÍFICO</strong>",
 stats:[
-{ label: "Los pueblos Mayo Yoremes de Sinaloa se consultarán en las decisiones que afecten su territorio y recurso hídricos." },
-{ label: "La SENER realiza consultas a los pueblos Mayo-Yoremes." },
-{ label: "El proceso ha sido supervisado por la Secretaría de Gobernación para garantizar su legalidad y legitimidad." },
+{ label: "Los pueblos Mayo-Yoremes de Sinaloa se consultarán en las decisiones que afecten su territorio y recurso hídricos." },
+{ label: "La <strong>Secretaría de Energía</strong> realiza consultas a los pueblos <br/>Mayo-Yoremes." },
+{ label: "El proceso ha sido supervisado por la <strong>Secretaría de Gobernación</strong> para garantizar su legalidad y legitimidad." },
 ],
 location: {
 center: [-109.054, 25.59],
@@ -95,9 +95,9 @@ conind3: {
 id: "conind3",
 type: "map",
 title: "CONSULTA INDÍGENA",
-description: "Para el Proyecto Helax",
+description: "<strong>PARA EL PROYECTO HELAX</strong>",
 stats:[
-{ label: "En enero de 2025 comenzó la fase informativa de la consulta indígena convocada por la Secretaría de Energía." },
+{ label: "En enero de 2025 comenzó la fase informativa de la consulta indígena convocada por la <strong>Secretaria de Energía</strong>." },
 { label: "Se identificaron al menos 9 municipios y 10 localidades como zona de impacto." },
 { label: "El proceso ha sido supervisado por la Secretaría de Gobernación para garantizar su legalidad y legitimidad." },
 ],
@@ -117,8 +117,8 @@ id: "leygraldpia",
 type: "map",
 title: "LEY GENERAL SOBRE LOS DERECHOS DE LOS PUEBLOS INDÍGENAS Y AFROMEXICANOS",
 stats: [
-{ label: "Se trabaja en coordinación con el Comité Técnico el cual esta conformado por la Secretaría de Gobernación, Consultoría jurídica de presidencia y el Instituto Nacional de los Pueblos indígenas." },
-{ label: "Se realizan sesiones de trabajo con los representantes de los 72 pueblos indígenas, quienes comunican y expresan las opiniones de los diversos pueblos indígenas." },
+{ label: "Se trabaja en coordinación con el Comité Técnico-SEGOB, Consultoría Jurídica de Presidencia y el INPI." },
+{ label: "Se realizan sesiones de trabajo con los representantes de los pueblos indígenas." },
 { label: "Próximamente se llevarán a cabo consultas en los pueblos indígenas para la aprobación de la Ley." },
 ],
 location: {
@@ -145,10 +145,10 @@ trenmexqro: {
 id: "trenmexqro",
 type: "map",
 title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
-description: "Tren Ciudad de México hacia el estado de Querétaro.",
+description: "<strong>TREN CDMX-QUERÉTARO.</strong>",
 stats: [
-{ label: "El tren cubrirá aproximadamente 226 km entre la Ciudad de México y Querétaro, pasando por los estados de México, Hidalgo y Querétaro. " },
-{ label: "Infraestructura: Contará con dos vías exclusivas para pasajeros, aprovechando en su mayoría el derecho de vía existente, y se estima que reducirá el tiempo de viaje a una hora y 40 minutos. " },
+{ label: "Cubrirá aproximadamente 226 km entre la Ciudad de México y Querétaro." },
+{ label: "Contará con dos vías exclusivas para pasajeros, aprovechando en su mayoría el derecho de vía existente, y se estima se reducirá el trayecto a 1:40 minutos." },
 { label: "El proceso ha sido supervisado por la Secretaría de Gobernación para garantizar su legalidad y legitimidad." },
 ],
 location: {
@@ -178,11 +178,11 @@ trenaifapach: {
 id: "trenaifapach",
 type: "map",
 title: "SEGUIMIENTO A LOS PROYECTOS DE TRENES DEL GOBIERNO DE MÉXICO",
-description: "Tren Aeropuerto Internacional Felipe Ángeles (AIFA) a Pachuca, Hgo.",
+description: "<strong>TREN AIFA-PACHUCA, HGO.</strong>",
 stats: [
-{ label: "El tramo AIFA Pachuca comprende alrededor de 57–64 km de vía doble electrificada, que conectará el Aeropuerto Internacional Felipe Ángeles (AIFA) con Pachuca, Hidalgo, atravesando municipios como Zumpango, Tizayuca, Zempoala y Mineral de la Reforma." },
-{ label: "La Manifestación de Impacto Ambiental (MIA) del proyecto está disponible para consulta pública hasta el 5 de marzo de 2025." },
-{ label: "El proceso ha sido supervisado por la Secretaría de Gobernación para garantizar su legalidad y legitimidad." },
+{ label: "Comprende alrededor de </br>57–64 km de vía doble electrificada conectará el Aeropuerto Internacional Felipe Ángeles (AIFA) con Pachuca, Hgo." },
+{ label: "La Manifestación de Impacto Ambiental (MIA) del proyecto está disponible para consulta pública." },
+{ label: "El proceso ha sido supervisado por la <strong>Secretaría de Gobernación</strong> para garantizar su legalidad y legitimidad." },
 ],
 location: {
 center: [-98.89374, 19.89560],
@@ -211,9 +211,9 @@ estconstpaz: {
 id: "estconstpaz",
 title: "ESTRATEGIA DE CONSTRUCCION DE PAZ",
 stats: [
-{ label: "BRIGADAS POR LA PAZ: Colaboró en las atenciones y promoción de la participación ciudadana a través de ferias, módulos de servicios y actividades comunitarias, en los programas." },
-{ label: "SÍ, AL DESARME, SÍ A LA PAZ: El programa consiste en el canje de armas de fuego y municiones, de manera anónima, por dinero en efectivo." },
-{ label: "TIANGUIS DEL BIENESTAR: Es un programa del gobierno mexicano que distribuye bienes confiscados o decomisados a personas en situación de vulnerabilidad o pobreza, de forma gratuita." },
+{ label: "<strong>BRIGADAS POR LA PAZ:</strong> </br>Colaboración en las atenciones y promoción de la participación ciudadana a través de ferias, módulos de servicios y actividades comunitarias, en los programas." },
+{ label: "<strong>SÍ, AL DESARME, SÍ A LA PAZ:</strong> Consiste en el canje de armas de fuego y municiones, de manera anónima, por dinero en efectivo." },
+{ label: "<strong>TIANGUIS DEL BIENESTAR:</strong> Distribución de bienes confiscados o decomisados a personas en situación de vulnerabilidad o pobreza, de forma gratuita." },
 ],
 location: {
 center: [-102.1057, 25.25189],
@@ -232,7 +232,7 @@ layerType: "polygon",
 
 juarez: {
 id: "juarez",
-title: "SÍ, AL DESARME, SÍ A LA PAZ \nCIUDAD JUÁREZ, CHIH.",
+title: "SÍ, AL DESARME, \nSÍ A LA PAZ \nCd. Juárez, Chih.",
 description: "Entre el 10 de enero y el 21 de marzo de 2025, se registraron los siguientes datos en Ciudad Juárez:",
 stats: [
 { label: "437 armas largas canjeadas, estableciendo un récord nacional en este tipo de armas." },
@@ -260,7 +260,7 @@ layerType: "polygon",
 
 celaya: {
 id: "celaya",
-title: "BRIGADAS POR LA PAZ \nCELAYA, GTO.",
+title: "BRIGADAS POR LA PAZ \nCelaya, Gto.",
 description: `Se colaboro en las atenciones y promoción de la participación ciudadana a través de ferias, módulos de servicios y actividades comunitarias, en los programas, teniendo como resultado lo siguiente:`,
 stats: [
 { label: "26,262 Atenciones brindadas." },
@@ -293,7 +293,7 @@ layerType: "polygon",
 
 gam: {
 id: "gam",
-title: "SÍ, AL DESARME, SÍ A LA PAZ \nGUSTAVO A. MADERO, CDMX.",
+title: "SÍ, AL DESARME, \nSÍ A LA PAZ \nGustavo A. Madero, CDMX.",
 description: `Se recolectaron 400 armas de fuego, destruidas públicamente por Sedena:`,
 stats: [
 { label: "318 armas cortas." },
@@ -323,8 +323,8 @@ isPulsing: true
 
 tianguis: {
 id: "tianguis",
-title: "TIANGUIS DEL BIENESTAR",
-description: "La DGPC contribuyó en la coordinación interinstitucional de los tres órdenes de gobierno para el programa de la Secretaría de Gobernación Tianguis del Bienestar, en el estado de Guerreo, con el cual se busca contribuir a la justicia social atendiendo a la población que más lo requiere a través de la entrega de artículos de primera necesidad incautados en aduana o decomisados a la delincuencia. Esto tuvo lugar en los municipios de:",
+title: "TIANGUIS DEL BIENESTAR - \nGuerrero",
+description: "La DGCyP contribuyó en la coordinación interinstitucional de los tres órdenes de gobierno para el programa Tianguis del Bienestar, con el cual se busca contribuir a la justicia social a través de la entrega de artículos de primera necesidad incautados en aduana o decomisados a la delincuencia a la población que más lo necesita. Esto tuvo lugar en los municipios de:",
 stats: [
   {label: "COCHOAPA"},
   {label: "METLÁTONOC"}
