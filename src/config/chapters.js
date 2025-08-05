@@ -15,7 +15,7 @@ imagen1: {
 id: "imagen1",
 type: "image",
 title: "¿QUIÉNES SOMOS?",
-description: `La DirecLa unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo al marco normativo y mejores estándares aplicables.`,
+description: `La DGPC es la unidad encargada de garantizar que los procesos de consultas, especialmente aquellos que involucran a pueblos y comunidades indígenas, se realicen de acuerdo al marco normativo y mejores estándares aplicables.`,
 imageUrl: "./data/images/ind_mex.jpg",
 },
 
@@ -232,7 +232,7 @@ layerType: "polygon",
 
 juarez: {
 id: "juarez",
-title: "SÍ, AL DESARME \nCIUDAD JUÁREZ, CHIH.",
+title: "SÍ, AL DESARME, SÍ A LA PAZ \nCIUDAD JUÁREZ, CHIH.",
 description: "Entre el 10 de enero y el 21 de marzo de 2025, se registraron los siguientes datos en Ciudad Juárez:",
 stats: [
 { label: "437 armas largas canjeadas, estableciendo un récord nacional en este tipo de armas." },
@@ -293,7 +293,7 @@ layerType: "polygon",
 
 gam: {
 id: "gam",
-title: "SÍ, AL DESARME \nGUSTAVO A. MADERO, CDMX.",
+title: "SÍ, AL DESARME, SÍ A LA PAZ \nGUSTAVO A. MADERO, CDMX.",
 description: `Se recolectaron 400 armas de fuego, destruidas públicamente por Sedena:`,
 stats: [
 { label: "318 armas cortas." },
@@ -324,7 +324,7 @@ isPulsing: true
 tianguis: {
 id: "tianguis",
 title: "TIANGUIS DEL BIENESTAR",
-description: "La Dirección General de Participación y Consultas (DGPC) contribuyó en la coordinación interinstitucional de los tres órdenes de gobierno para el programa de la Secretaría de Gobernación Tianguis del Bienestar, en el estado de Guerreo, con el cual se busca contribuir a la justicia social atendiendo a la población que más lo requiere a través de la entrega de artículos de primera necesidad incautados en aduana o decomisados a la delincuencia. Esto tuvo lugar en los municipios de:",
+description: "La DGPC contribuyó en la coordinación interinstitucional de los tres órdenes de gobierno para el programa de la Secretaría de Gobernación Tianguis del Bienestar, en el estado de Guerreo, con el cual se busca contribuir a la justicia social atendiendo a la población que más lo requiere a través de la entrega de artículos de primera necesidad incautados en aduana o decomisados a la delincuencia. Esto tuvo lugar en los municipios de:",
 stats: [
   {label: "COCHOAPA"},
   {label: "METLÁTONOC"}

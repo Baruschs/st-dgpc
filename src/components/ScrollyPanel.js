@@ -28,6 +28,7 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className }) => {
           <div className="custom-title">
             <div className="main-title">DIRECCIÓN GENERAL DE</div>
             <div className="main-title">PARTICIPACIÓN Y CONSULTAS</div>
+            <div className="main-title">(DGPC)</div>
           </div>
           <div className="flecha-container">
             <svg
