@@ -7,7 +7,6 @@ const VideoPanel = ({ videoUrl, onChapterEnter, chapterId }) => {
   const [ref, inView] = useInView({ threshold: 0.8 });
   const [userInteracted, setUserInteracted] = useState(false);
 
-  // Captura primera interacción del usuario
   useEffect(() => {
     const handleUserInteraction = () => {
       setUserInteracted(true);
@@ -36,12 +35,10 @@ const VideoPanel = ({ videoUrl, onChapterEnter, chapterId }) => {
       video.pause();
       video.currentTime = 0;
 
-      // 🔊 Si el usuario ya interactuó, reproducimos con sonido
       if (userInteracted) {
         video.muted = false;
         video.play().catch(() => {});
       } else {
-        // 🔇 Silenciado si el navegador aún no permite audio automático
         video.muted = true;
         video.play().catch(() => {});
       }

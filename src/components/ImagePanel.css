@@ -47,7 +47,6 @@
   margin-right: 0.2rem;
 }
 
-/* 🎯 EFECTO NUEVO: entrada con zoom + fade */
 @keyframes zoomFadeIn {
   0% {
     transform: scale(1.1);

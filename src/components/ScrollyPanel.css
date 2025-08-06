@@ -21,8 +21,8 @@
   padding: 1.5rem;
   border-radius: 16px;
   max-width: 20%;
-  margin-left: 4rem;
-  border-left: 10px solid #611232;
+  margin-left: 6rem;
+  border-left: 5px solid #611232;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   text-align: left;
   pointer-events: auto;
@@ -41,7 +41,7 @@
   max-width: 600px;
   border: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  margin-left: 0;
+  margin-left: 6rem;
   text-align: center;
   animation: zoom-in 0.8s ease-out;
 }
@@ -99,25 +99,40 @@
 }
 
 /* --- ESTILOS DE LISTAS PERSONALIZADAS --- */
-
 .styled-list {
   list-style: none;
   padding-left: 1.2rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0 0.rem;
 }
 
 .styled-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio horizontal entre bullet y texto */
+  margin-bottom: 0.5rem; /* 🔽 Elimina espacio vertical */
+  line-height: 1.1;  /* 🔽 Espacio más cerrado */
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #a57f2c;
+  flex-shrink: 0;
+  margin-top: 1px; /* 🔧 Alineación visual con texto */
+}
+
+.bullet-text {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.1;
 }
 
 .styled-list .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #a57f2c;
+  line-height: 1;
+  margin-top: 2px; /* ajuste fino para alinear con texto */
 }
 
 .custom-title ul.custom-list {
@@ -152,7 +167,7 @@
 }
 
 .gobernacion-logo {
-  max-width: 250px; /* Ajusta el tamaño del logo como necesites */
+  max-width: 180px; /* Ajusta el tamaño del logo como necesites */
   height: auto;
   margin-top: 0rem;
   margin-bottom: .5rem; /* Espacio entre el logo y la fecha */
@@ -162,7 +177,7 @@
 display: flex;
 justify-content: center;
 margin-top: .5rem;
-width: 25%;
+width: 15%;
 }
 
 .flecha-svg {
@@ -247,8 +262,4 @@ opacity: 0.1;
 100% {
 opacity: 1;
 }
-
-
-
-
 }

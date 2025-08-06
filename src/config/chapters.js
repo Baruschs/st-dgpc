@@ -9,6 +9,9 @@ zoom: 4.7,
 pitch: 0,
 bearing: 0,
 },
+pmtileUrl: "pmtiles://data/Guana.pmtiles",
+sourceLayer: "Guana_tile",
+layerType: "polygon",
 },
 
 objetivo: {
@@ -36,7 +39,7 @@ actividad1: {
 id: "actividad1",
 type: "map",
 title: "ACTIVIDADES REALIZADAS",
-description: "Durante el periodo noviembre 2024 y febrero 2025 se llevaron a cabo 10 brigadas, de las cuáles la DGCCPS participó en 8.",
+description: "Durante el periodo noviembre 2024 y julio 2025 se llevaron a cabo 10 brigadas en el municipio de Celaya, de las cuáles la DGCCPS participó en 8.",
 location: {
       center: [-100.81094, 20.52193],
       zoom: 10,
@@ -52,7 +55,7 @@ actividad2: {
 id: "actividad2",
 type: "map",
 title: "ACTIVIDADES REALIZADAS",
-description: "Hasta febrero de 2025 los brigadistas de la DGCCPS han cubierto 8 colonias del municipio de Celaya.",
+description: "Hasta julio de 2025 los brigadistas de la DGCCPS han cubierto 8 colonias del municipio.",
    location: {
       center: [-100.81094, 20.556],
       zoom: 11.7,
@@ -103,7 +106,7 @@ snjuanvega: {
 pmtileUrl: "pmtiles://data/villabajio.pmtiles",
 sourceLayer: "villabajio_tile",
 layerType: "polygon",
-photoUrl: "data/images/villasbajio.jpg",
+photoUrl: "fotos/villasbajio.jpg",
 },
 
 emilianoz: {
@@ -124,7 +127,7 @@ emilianoz: {
     pmtileUrl: "pmtiles://data/emilianozapata.pmtiles",
     sourceLayer: "emilianozapata_tile",
     layerType: "polygon",
-    photoUrl: "data/images/emilianozapata.jpg",
+    photoUrl: "fotos/emilianozapata.jpg",
   },
 
 snmigueloctopan: {
@@ -145,7 +148,7 @@ snmigueloctopan: {
     pmtileUrl: "pmtiles://data/snmigueloctopan.pmtiles",
     sourceLayer: "snmigueloctopan_tile",
     layerType: "polygon",
-    photoUrl: "data/images/snmigueloctopan.jpg",
+    photoUrl: "fotos/snmigueloctopan.jpg",
   },
 
 lagos: {
@@ -165,7 +168,7 @@ lagos: {
     pmtileUrl: "pmtiles://data/lagos.pmtiles",
     sourceLayer: "lagos_tile",
     layerType: "polygon",
-    photoUrl: "data/images/lagos.jpg",
+    photoUrl: "fotos/lagos.jpg",
   },
 
 monteblanco: {
@@ -185,7 +188,7 @@ monteblanco: {
     pmtileUrl: "pmtiles://data/monteblanco.pmtiles",
     sourceLayer: "monteblanco_tile",
     layerType: "polygon",
-    photoUrl: "data/images/monteblanco.jpg",
+    photoUrl: "fotos/monteblanco.jpg",
   },
 
 ranchoseco: {
@@ -206,7 +209,7 @@ ranchoseco: {
 pmtileUrl: "pmtiles://data/ranchoseco.pmtiles",
 sourceLayer: "ranchoseco_tile",
 layerType: "polygon",
-photoUrl: "data/images/ranchoseco.jpg",
+photoUrl: "fotos/ranchoseco.jpg",
 },
 
 rincontamayo: {
@@ -227,7 +230,7 @@ rincontamayo: {
 pmtileUrl: "pmtiles://data/rincontamayo.pmtiles",
 sourceLayer: "rincontamayo_tile",
 layerType: "polygon",
-photoUrl: "data/images/rincontamayo.jpg",
+photoUrl: "fotos/rincontamayo.jpg",
 },
 
 imágenes: {

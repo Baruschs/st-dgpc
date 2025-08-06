@@ -24,7 +24,7 @@ const ScrollyPanel = ({ chapter, onChapterEnter, className, onOpenPhoto }) => {
             <div className="subtitle-bold">CELAYA, GUANAJUATO</div>
             <div className="subtitle-bold">DIRECCIÓN GENERAL DE</div>
             <div className="subtitle-bold">PARTICIPACIÓN Y CONSULTAS</div>
-            <div className="subtitle-light">Febrero 2024 - Julio 2025</div>
+            <div className="subtitle-light">Noviembre 2024 - Julio 2025</div>
           </div>
           <div className="flecha-container">
             <svg className="flecha-svg" viewBox="0 0 32 10">
